@@ -12,10 +12,9 @@ let g:NERDTreeHijackNetrw=0
 " ---------------
 " commentary.vim
 " ---------------
-if !hasmapto('<Plug>Commentary') || maparg('gc','n') ==# ''
-  nmap <leader>/ <Plug>Commentary<cr>
-  xmap <leader>/ <Plug>Commentary<cr>
-endif
+let g:commentary_map_backslash = 0
+nmap <Leader>/ <Plug>CommentaryLine
+xmap <Leader>/ <Plug>Commentary
 
 " ---------------
 " AutoSave
