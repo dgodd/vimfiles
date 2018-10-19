@@ -1,6 +1,6 @@
 # vimfiles
 
-This is my collection of localised vimfiles, they are based upon vim bootstrap
+This is my collection of localised vimfiles, they are based upon [vim bootstrap](https://vim-bootstrap.com/)
 
 To generate the base file use:
 ```
