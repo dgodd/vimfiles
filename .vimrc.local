@@ -1,0 +1,39 @@
+" ---------------
+" NERDTree
+" ---------------
+nnoremap <leader>nn :NERDTreeToggle<CR>
+nnoremap \ :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
+nnoremap \| :NERDTreeFind<CR>
+let g:NERDTreeShowBookmarks=1
+" let g:NERDTreeChDirMode=2 " Change the NERDTree directory to the root node
+let g:NERDTreeHijackNetrw=0
+
+" ---------------
+" commentary.vim
+" ---------------
+if !hasmapto('<Plug>Commentary') || maparg('gc','n') ==# ''
+  nmap <leader>/ <Plug>Commentary<cr>
+  xmap <leader>/ <Plug>Commentary<cr>
+endif
+
+" ---------------
+" AutoSave
+" ---------------
+let g:autofmt_autosave = 1
+
+set autowriteall awa
+:au FocusLost * silent! wa
+
+" ---------------
+" vim-go
+" ---------------
+let g:go_fmt_command = "gofmt"
+
+" ---------------
+" Mouse moves
+" ---------------
+set mouse=a
+
+
+
