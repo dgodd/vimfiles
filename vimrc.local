@@ -6,7 +6,6 @@ nnoremap \ :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 nnoremap \| :NERDTreeFind<CR>
 let g:NERDTreeShowBookmarks=1
-" let g:NERDTreeChDirMode=2 " Change the NERDTree directory to the root node
 let g:NERDTreeHijackNetrw=0
 
 " ---------------
@@ -30,9 +29,11 @@ set autowriteall awa
 let g:go_fmt_command = "gofmt"
 
 " ---------------
-" Mouse moves
+" Generic
 " ---------------
 set mouse=a
+set nowrap
 
-
-
+" Clear last search highlighting
+map <Space> :noh<cr>
+map <Enter> :w<cr>
